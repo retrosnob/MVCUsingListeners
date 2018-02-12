@@ -1,16 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package mvcusinglisteners;
 
 /**
  *
  * @author justin
  */
-public class CustomEvent {
+public class MVCEvent {
+    
     private String message;
+    
+    public MVCEvent(String message) {
+        this.setMessage(message);
+    }
     
     public String getMessage() {
         return message;
@@ -19,4 +20,5 @@ public class CustomEvent {
     public void setMessage(String message) {
         this.message =  message;
     }
+    
 }

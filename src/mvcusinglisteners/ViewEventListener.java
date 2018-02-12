@@ -10,8 +10,8 @@ package mvcusinglisteners;
  *
  * @author justin
  */
-public interface CustomEventListener {
+public interface ViewEventListener {
     
-    public void onEventHappened(CustomEvent e);
+    public void onViewEventHappened(ViewEvent e);
     
 }
