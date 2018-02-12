@@ -2,8 +2,14 @@
 package mvcusinglisteners;
 
 /**
- *
- * @author justin
+ * The Model is the logic for application.
+ * In a real application, the model would deal with persistent
+ * and in-memory storage.
+ * It has no references to any other part of the application.
+ * It has an update method that allows the controller to tell it
+ * to update.
+ * It can fire events that the controller will respond to.
+ * @author Justin Robertson
  */
 public class Model {
     
@@ -23,7 +29,4 @@ public class Model {
         System.out.println("Model received: " + message);
         fireModelEventHappened();
     }
-    
-    
-    
 }

@@ -2,15 +2,18 @@
 package mvcusinglisteners;
 
 /**
- *
- * @author justin
+ * The view is the GUI.
+ * It has no references to any other part of the application.
+ * When the button is pressed it fires a view event, which the
+ * controller responds to.
+ * It has an update method that allows the controller to tell
+ * it to update.
+ * @author Justin Robertson
  */
 public class View extends javax.swing.JFrame {
 
     ViewEventListener listener;
-    /**
-     * Creates new form View
-     */
+
     public View() {
         initComponents();
     }

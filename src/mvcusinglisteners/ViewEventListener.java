@@ -1,14 +1,13 @@
-/*
- * You may not have seen a Java interface before but it's quite simple.
- * All it says is that if, as a class, you want to call yourself a 
- * CustomEventListener, then you have to implement a methods called 
- * onEventHappened.
+/**
+ * The ViewEventListener interface specifies that implementing
+ * classes must have an onViewEventHappened method, that takes
+ * a ViewEvent parameter and returns void.
  */
 package mvcusinglisteners;
 
 /**
  *
- * @author justin
+ * @author Justin Robertson
  */
 public interface ViewEventListener {
     
